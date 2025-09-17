@@ -7,14 +7,14 @@ class Operaciones:
     def leerNumeros(self):
         while True:
             try:
-                self.num1 = int(input("Número 1:"))
+                self.num1 = int(input("Número 1: "))
                 break
             except Exception:
                 print("Número inválido")
                 continue
         while True:
             try:
-                self.num2 = int(input("Número 2:"))
+                self.num2 = int(input("Número 2: "))
                 break
             except Exception:
                 print("Número inválido")
@@ -22,8 +22,18 @@ class Operaciones:
     
     def sumar(self):
         self.resultado = "La suma de " + str(self.num1) + " + " + str(self.num2) + " es igula a " + str(self.num1 + self.num2)
+
+    def restar(self):
+        self.resultado = "La resta de " + str(self.num1) + " - " + str(self.num2) + " es igula a " + str(self.num1 - self.num2)
+
+    def multiplicar(self):
+        self.resultado = "La multiplicación de " + str(self.num1) + " * " + str(self.num2) + " es igula a " + str(self.num1 * self.num2)
+
+    def dividir(self):
+        self.resultado = "La division de " + str(self.num1) + " / " + str(self.num2) + " es igula a " + str(self.num1 / self.num2)
+    
+    def residuo(self):
+        self.resultado = "El residuo de " + str(self.num1) + " % " + str(self.num2) + " es igula a " + str(self.num1 % self.num2)
     
     def mostrarResultado(self):
         print(self.resultado)
-        
-        
