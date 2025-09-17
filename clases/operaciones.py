@@ -10,7 +10,7 @@ class Operaciones:
                 self.num1 = int(input("Número 1: "))
                 break
             except Exception:
-                print("Número inválido")
+                print("Número inválido ")
                 continue
         while True:
             try:
